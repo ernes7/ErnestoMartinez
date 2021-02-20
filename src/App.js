@@ -1,14 +1,7 @@
-import './App.scss';
-import Button from './components/Button';
-import Footer from './components/Footer';
+import "./App.scss";
+import Routes from "./Routes";
 
 function App() {
-  return (
-    <div className="App">
-        Ernesto Martinez
-        <Button title={"LinkedIn"}/>
-        <Footer/>
-    </div>
-  );
+  return <Routes />;
 }
 export default App;
