@@ -1,0 +1,15 @@
+@import "../App.scss";
+
+.button {
+  background-color: $secondary;
+  color: $bgColor;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+
+  border: 1px solid $main;
+}
