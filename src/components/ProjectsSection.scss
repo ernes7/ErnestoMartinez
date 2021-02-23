@@ -1,0 +1,14 @@
+@import "../App.scss";
+
+.container {
+    background-color: $secondary;
+    color: $bgColor;
+    height: 1000px;
+    width: 100%;
+}
+
+.project {
+    height: 70%;
+    width: 70%;
+    border: 1px solid black;
+}
