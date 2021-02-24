@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
 
 $bgColor: #313440;
 $main: #66fcf1;
 $secondary: #c5c6c7;
+$fontText: "Didact Gothic", sans-serif;
 
 .App {
   text-align: center;
@@ -20,8 +22,8 @@ h1 {
 }
 
 h2 {
-  font-size: 5vw;
-  margin: 0vw 0 2vw 0;
+  font-size: 8vw;
+  margin: 2vw 0 2vw 0;
   color: $bgColor;
   font-family: "Kaushan Script", cursive;
 }

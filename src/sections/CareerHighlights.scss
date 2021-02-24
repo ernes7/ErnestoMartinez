@@ -1,28 +1,29 @@
 @import "../App.scss";
 
-.projectsSectionContainer {
-  background-color: $bgColor;
-  color: $secondary;
+.careerHighlightsContainer {
+  background-color: $secondary;
+  color: $bgColor;
   width: 100%;
   z-index: 1;
   display: flex;
   flex-direction: column;
 
-  h2 {
-    color: $secondary;
+  img {
+    width: 10vw;
   }
 }
 
-.projectsContainer {
+.highlightContainer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   @media only screen and (max-width: 600px) {
     flex-direction: column;
   }
   justify-content: space-evenly;
 }
 
-.project {
+.highlight {
   align-self: center;
   margin: 5vw;
 }
