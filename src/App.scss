@@ -15,6 +15,21 @@ $secondary: #c5c6c7;
 h1 {
   color: $main;
   font-size: 10vw;
+  margin: 0;
+  font-family: "Kaushan Script", cursive;
+}
+
+h2 {
+  font-size: 5vw;
+  margin: 0vw 0 2vw 0;
+  color: $bgColor;
+  font-family: "Kaushan Script", cursive;
+}
+
+h3 {
+  font-size: 5vw;
+  margin: -1vw 0 0 0;
+  color: $secondary;
   font-family: "Kaushan Script", cursive;
 }
 

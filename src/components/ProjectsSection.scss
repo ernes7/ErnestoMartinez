@@ -1,14 +1,28 @@
 @import "../App.scss";
 
-.container {
-    background-color: $secondary;
-    color: $bgColor;
-    height: 1000px;
-    width: 100%;
+.projectsSectionContainer {
+  background-color: $secondary;
+  color: $bgColor;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 5vw;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: row;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+  justify-content: space-evenly;
 }
 
 .project {
-    height: 70%;
-    width: 70%;
-    border: 1px solid black;
+  align-self: center;
+  margin: 5vw;
+  height: 30vw;
+  width: 30vw;
+  border: 1px solid black;
 }

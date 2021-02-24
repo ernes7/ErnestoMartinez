@@ -1,14 +1,16 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
+import "./Title.scss";
 
 import Button from "../components/Button";
-import ParticlesWrapper from './ParticlesWrapper';
+import ParticlesWrapper from "./ParticlesWrapper";
 
 export default function Title() {
-    return (
-        <div>
-        <ParticlesWrapper/>
+  return (
+    <div className={"titleContainer"}>
+      <ParticlesWrapper />
       <h1>Ernesto Martinez</h1>
+      <h3>Software Engineer</h3>
       <div>
         <Link
           to={{ pathname: "https://www.linkedin.com/in/ernesto-martinez7" }}
@@ -40,7 +42,6 @@ export default function Title() {
           </Button>
         </Link>
       </div>
-
-        </div>
-    )
+    </div>
+  );
 }
