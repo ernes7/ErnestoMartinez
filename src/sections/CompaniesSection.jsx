@@ -1,6 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./CompaniesSection.scss";
-import lithicLogo from "../assets/companies/lithic.png";
+import lithicLogo from "../assets/companies/lithiclogo3k.png";
+import dmssLogo from "../assets/companies/DMSS-Logo.png";
+import thesisLogo from "../assets/companies/thesis.png"
 
 export default function CompaniesSection() {
   return (
@@ -10,10 +13,18 @@ export default function CompaniesSection() {
         {companies.map((company) => {
           return (
             <div className="company">
-              <div>
-                <img src={company.logo} />
+              <div className="imageContainer">
+              <Link
+          to={{ pathname: company.linkedIn || null }}
+          target="_blank"
+        >                <img src={company.logo} alt={company.name} /></Link>
+
               </div>
               <div className="companyRole"> {company.position}</div>
+              <div>
+                <p>{company.time}</p>
+                {company.quote && <q className="quote">{company.quote}</q>}
+              </div>
             </div>
           );
         })}
@@ -29,22 +40,26 @@ const companies = [
     position: "Software Engineer",
     tools: [],
     quote: null,
-    linkedIn: null,
+    time: "June 2020 - Present",
+    linkedIn: "https://www.linkedin.com/company/lithictech/",
   },
   {
     name: "Thesis Agency",
-    logo: lithicLogo,
+    logo: thesisLogo,
     position: "Software Engineer Intern",
     tools: [],
     quote: null,
-    linkedIn: null,
+    time: "June 2019 - August 2019",
+    linkedIn: "https://www.linkedin.com/company/thesis-agency/",
   },
   {
-    name: "DMSS",
-    logo: lithicLogo,
+    name: "Diversity & Multicultural Student Services",
+    logo: dmssLogo,
     position: "Web Developer",
     tools: [],
     quote: null,
-    linkedIn: null,
+    time: "September 2015 - June 2020",
+    linkedIn: "https://www.facebook.com/PSU.DMSS",
   },
+
 ];

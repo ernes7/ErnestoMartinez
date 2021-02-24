@@ -9,8 +9,28 @@
   flex-direction: column;
 
   img {
-    width: 10vw;
+    width: 20vw;
+    @media only screen and (max-width: 600px) {
+      width: 40vw;
+    }
   }
+
+  p {
+    color: $bgColor;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+}
+
+.imageContainer {
+  height: 20vw;
+  @media only screen and (max-width: 600px) {
+    height: 40vw;
+  }
+  display: flex;
+  align-self: center;
+  align-items: center;
+
 }
 
 .companiesContainer {
@@ -26,11 +46,15 @@
 .company {
   display: flex;
   flex-direction: column;
-  margin: 5vw;
+  margin: 2vw;
   min-width: 10vw;
 }
 
 .companyRole {
   font-family: $fontText;
-  font-size: 3vw;
+  font-size: 25px;
+}
+
+.quote {
+  font-style: italic;
 }
