@@ -33,3 +33,13 @@
   font-size: 5vw;
   margin-bottom: 5vw;
 }
+
+.quote {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.quoteBlock {
+  display: flex;
+  flex-direction: column;
+}

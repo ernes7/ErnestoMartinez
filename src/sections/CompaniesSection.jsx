@@ -42,7 +42,7 @@ export default function CompaniesSection() {
                 {company.tools.map((tool) => {
                   return (
                     <div key={tool.alt}>
-                      <img className="logoImage" src={tool.logo} />
+                      <img className="logoImage" src={tool.logo} alt={tool.alt} />
                     </div>
                   );
                 })}
@@ -107,7 +107,7 @@ const companies = [
     quote:
       "Ernesto is a creative, hard-working, innovative professional. He is responsible and detail oriented. He designed some fantastic pieces for us and kept our social media on track. I enjoyed working with him and having him as a part of our team!",
     time: "September 2015 - June 2020",
-    quoteAuthor: "Cece Ridder, Director of DMSS.",
+    quoteAuthor: "CeCe Ridder, Director of DMSS.",
     linkedIn: "https://www.facebook.com/PSU.DMSS",
   },
 ];
