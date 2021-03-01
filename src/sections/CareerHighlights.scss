@@ -9,7 +9,7 @@
   flex-direction: column;
 
   img {
-    width: 10vw;
+    width: 90vw;
   }
 }
 
@@ -26,4 +26,10 @@
 .highlight {
   align-self: center;
   margin: 5vw;
+}
+
+.highlightName {
+  font-family: $fontText;
+  font-size: 5vw;
+  margin-bottom: 5vw;
 }

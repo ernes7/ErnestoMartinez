@@ -91,7 +91,7 @@ const companies = [
     ],
     quote:
       "It was a joy working with Ernesto while he was interning at Thesis. He always asked the good questions and would execute on any given project. He also played a huge part in helping with the launch of the new Thesis website. For someone who hadn't had much Front End Development experience, he caught on really quick and the team really wished we could have kept him on longer!",
-    quoteAuthor: "Cemal Richards",
+    quoteAuthor: "Cemal Richards, Senior Software Engineer.",
     time: "June 2019 - August 2019",
     linkedIn: "https://www.linkedin.com/company/thesis-agency/",
   },
@@ -107,7 +107,7 @@ const companies = [
     quote:
       "Ernesto is a creative, hard-working, innovative professional. He is responsible and detail oriented. He designed some fantastic pieces for us and kept our social media on track. I enjoyed working with him and having him as a part of our team!",
     time: "September 2015 - June 2020",
-    quoteAuthor: "Cece Ridder",
+    quoteAuthor: "Cece Ridder, Director of DMSS.",
     linkedIn: "https://www.facebook.com/PSU.DMSS",
   },
 ];
