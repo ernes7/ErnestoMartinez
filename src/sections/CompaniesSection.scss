@@ -30,14 +30,15 @@
   display: flex;
   align-self: center;
   align-items: center;
-
+  justify-content: center;
 }
 
 .companiesContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  @media only screen and (max-width: 600px) {
+  align-items: center;
+  @media only screen and (max-width: 1024px) {
     flex-direction: column;
   }
   justify-content: space-evenly;
@@ -46,8 +47,13 @@
 .company {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin: 2vw;
-  min-width: 10vw;
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+    width: 90vw;
+  }
+  width: 20vw;
 }
 
 .companyRole {
@@ -57,4 +63,27 @@
 
 .quote {
   font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.quoteBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.toolsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoImage {
+  margin: 0.4vw;
+  filter: brightness(75%);
+  width: 1.5vw !important;
+  @media only screen and (max-width: 1024px) {
+    margin: 1vw;
+    width: 20px !important;
+  }
 }
