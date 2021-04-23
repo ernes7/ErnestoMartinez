@@ -7,8 +7,10 @@ export default function ProjectsSection() {
     <div className={"projectsSectionContainer"}>
       <h2 className="projectSectionTitle">Projects</h2>
       <div className="projectsContainer">
-        <Youtube embedID="851E8-CaYY8" />
-        <Youtube embedID="851E8-CaYY8" />
+        <div className="project">
+          <Youtube embedID="851E8-CaYY8" />
+        </div>
+
       </div>
     </div>
   );

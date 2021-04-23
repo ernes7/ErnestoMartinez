@@ -7,12 +7,12 @@ export default function Youtube({embedID}) {
         <div className={"video-responsive"}>
             <iframe
                 title="Project Video"
-                width="350"
-                height="200"
+                width="375"
+                height="300"
                 frameBorder="0"
-                src={`https://www.youtube.com/embed/${embedID}`}
+                src={`https://www.youtube.com/embed/${embedID}?controls=0&rel=0&amp&showinfo=0`}
                 allowFullScreen
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; loop"
             />
         </div>
     )
