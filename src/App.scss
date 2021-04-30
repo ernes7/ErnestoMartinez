@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
 
+// Colors
 $bgColor: #313440;
 $main: #66fcf1;
 $secondary: #c5c6c7;
+
+// Fonts
 $fontText: "Didact Gothic", sans-serif;
+$fontTitle: "Kaushan Script", cursive;
+
+// Element Padding
 
 .App {
   text-align: center;
@@ -18,21 +24,21 @@ h1 {
   color: $main;
   font-size: 10vw;
   margin: 0;
-  font-family: "Kaushan Script", cursive;
+  font-family: $fontTitle;
 }
 
 h2 {
   font-size: 8vw;
   margin: 2vw 0 2vw 0;
   color: $bgColor;
-  font-family: "Kaushan Script", cursive;
+  font-family: $fontTitle;
 }
 
 h3 {
   font-size: 5vw;
   margin: -1vw 0 0 0;
   color: $secondary;
-  font-family: "Kaushan Script", cursive;
+  font-family: $fontTitle;
 }
 
 p {
@@ -48,4 +54,13 @@ p {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.fullLayout {
+  margin: 5vw 0 10vw 0;
+  z-index: 1;
+  height: 100vh;
+  @media only screen and (min-width: 1025px) {
+    margin: 5vw 0 0vw 0;
+  }
 }
