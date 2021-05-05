@@ -1,7 +1,7 @@
 @import "../App.scss";
 
 .projectsSectionContainer {
-  background-color: $bgColor;
+  // background-color: $bgColor;
   color: $secondary;
   width: 100%;
   z-index: 1;
@@ -15,11 +15,10 @@
 
 .projectsContainer {
   display: flex;
-  flex-direction: row;
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;
-  }
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .project {
