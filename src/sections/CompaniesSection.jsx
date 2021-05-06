@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./CompaniesSection.scss";
 import lithicLogo from "../assets/companies/lithiclogo3k.png";
 import dmssLogo from "../assets/companies/DMSS-Logo.png";
@@ -16,12 +15,29 @@ import rubyLogo from "../assets/logos/ruby.svg";
 import sassLogo from "../assets/logos/sass-1.svg";
 import pythonLogo from "../assets/logos/python-5.svg";
 import salesforceLogo from "../assets/logos/salesforce-2.svg";
+import Company from "../components/Company";
 
 export default function CompaniesSection() {
   return (
     <div className={"companiesSectionContainer"}>
       <h2>Experience</h2>
       <div className="companiesContainer">
+        {companies.map((comp) => {
+          return (
+            <Company
+              tools={comp.tools}
+              logo={comp.logo}
+              linkedIn={comp.linkedIn}
+              name={comp.name}
+              duration={comp.time}
+              jobTitle={comp.position}
+              description={comp.description}
+            />
+          );
+        })}
+      </div>
+
+      {/* <div className="companiesContainer">
         {companies.map((company) => {
           return (
             <div className="company">
@@ -56,7 +72,7 @@ export default function CompaniesSection() {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 }
@@ -76,6 +92,7 @@ const companies = [
       { logo: salesforceLogo, alt: "salesforce logo" },
     ],
     quote: null,
+    description: "bla bla bla ",
     time: "June 2020 - Present",
     linkedIn: "https://www.linkedin.com/company/lithictech/",
   },
@@ -89,6 +106,7 @@ const companies = [
       { logo: firebaseLogo, alt: "firebase logo" },
       { logo: sketchLogo, alt: "sketch logo" },
     ],
+    description: "bla bla bla ",
     quote:
       "It was a joy working with Ernesto while he was interning at Thesis. He always asked the good questions and would execute on any given project. He also played a huge part in helping with the launch of the new Thesis website. For someone who hadn't had much Front End Development experience, he caught on really quick and the team really wished we could have kept him on longer!",
     quoteAuthor: "Cemal Richards, Senior Software Engineer.",
@@ -104,6 +122,7 @@ const companies = [
       { logo: cssLogo, alt: "css logo" },
       { logo: psLogo, alt: "ps logo" },
     ],
+    description: "bla bla bla ",
     quote:
       "Ernesto is a creative, hard-working, innovative professional. He is responsible and detail oriented. He designed some fantastic pieces for us and kept our social media on track. I enjoyed working with him and having him as a part of our team!",
     time: "September 2015 - June 2020",
