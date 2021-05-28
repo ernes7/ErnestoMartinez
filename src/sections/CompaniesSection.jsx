@@ -20,9 +20,8 @@ import Company from "../components/Company";
 
 export default function CompaniesSection() {
   return (
-    <>
     <div className={"companiesSectionContainer"}>
-      <h2>Experience</h2>
+    <h2>Experience</h2>
       <div className="companiesContainer">
         {companies.map((comp) => {
           return (
@@ -37,46 +36,8 @@ export default function CompaniesSection() {
             />
           );
         })}
-      </div>
-
-      {/* <div className="companiesContainer">
-        {companies.map((company) => {
-          return (
-            <div className="company">
-              <div className="imageContainer">
-                <Link
-                  to={{ pathname: company.linkedIn || null }}
-                  target="_blank"
-                >
-                  {" "}
-                  <img src={company.logo} alt={company.name} />
-                </Link>
-              </div>
-              <div className="companyRole"> {company.position}</div>
-              <div>
-                <p>{company.time}</p>
-              </div>
-              <div className="toolsContainer">
-                {company.tools.map((tool) => {
-                  return (
-                    <div key={tool.alt}>
-                      <img className="logoImage" src={tool.logo} alt={tool.alt} />
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="quoteBlock">
-                {company.quote && <q className="quote">{company.quote}</q>}
-                {company.quote && (
-                  <cite className="quote"> --{company.quoteAuthor}</cite>
-                )}
-              </div>
-            </div>
-          );
-        })}
-      </div> */}
+        </div>
     </div>
-    </>
   );
 }
 
