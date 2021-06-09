@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./CompaniesSection.scss";
+import "../App.scss"
 import lithicLogo from "../assets/companies/lithiclogo3k.png";
 import dmssLogo from "../assets/companies/DMSS-Logo.png";
 import thesisLogo from "../assets/companies/thesis.png";
@@ -16,44 +16,26 @@ import rubyLogo from "../assets/logos/ruby.svg";
 import sassLogo from "../assets/logos/sass-1.svg";
 import pythonLogo from "../assets/logos/python-5.svg";
 import salesforceLogo from "../assets/logos/salesforce-2.svg";
+import graphqlLogo from "../assets/logos/graphql.svg";
+import dockerLogo from "../assets/logos/docker.svg";
+import Company from "../components/Company";
 
 export default function CompaniesSection() {
   return (
     <div className={"companiesSectionContainer"}>
-      <h2>Experience</h2>
+    <h2>Experience</h2>
       <div className="companiesContainer">
-        {companies.map((company) => {
+        {companies.map((comp) => {
           return (
-            <div className="company">
-              <div className="imageContainer">
-                <Link
-                  to={{ pathname: company.linkedIn || null }}
-                  target="_blank"
-                >
-                  {" "}
-                  <img src={company.logo} alt={company.name} />
-                </Link>
-              </div>
-              <div className="companyRole"> {company.position}</div>
-              <div>
-                <p>{company.time}</p>
-              </div>
-              <div className="toolsContainer">
-                {company.tools.map((tool) => {
-                  return (
-                    <div key={tool.alt}>
-                      <img className="logoImage" src={tool.logo} alt={tool.alt} />
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="quoteBlock">
-                {company.quote && <q className="quote">{company.quote}</q>}
-                {company.quote && (
-                  <cite className="quote"> --{company.quoteAuthor}</cite>
-                )}
-              </div>
-            </div>
+            <Company
+              tools={comp.tools}
+              logo={comp.logo}
+              linkedIn={comp.linkedIn}
+              name={comp.name}
+              duration={comp.time}
+              jobTitle={comp.position}
+              description={comp.description}
+            />
           );
         })}
       </div>
@@ -74,6 +56,8 @@ const companies = [
       { logo: rubyLogo, alt: "ruby logo" },
       { logo: pythonLogo, alt: "python logo" },
       { logo: salesforceLogo, alt: "salesforce logo" },
+      { logo: graphqlLogo, alt: "Graph QL Logo"},
+      { logo: dockerLogo, alt: "Docker Logo"}
     ],
     quote: null,
     time: "June 2020 - Present",
@@ -82,7 +66,7 @@ const companies = [
   {
     name: "Thesis Agency",
     logo: thesisLogo,
-    position: "Software Engineer Intern",
+    position: "Software Engineer",
     tools: [
       { logo: reactLogo, alt: "react logo" },
       { logo: nodeLogo, alt: "node js logo" },
