@@ -8,7 +8,6 @@ export default function Company({
   duration,
   tools,
   linkedIn,
-  description,
   name,
 }) {
   return (
@@ -20,10 +19,10 @@ export default function Company({
         </Link>
       </div>
       <div className="companyDesc">
-        <p className="companyRole">{jobTitle}</p>
-        <p>{duration}</p>
-        <p>{description}</p>
+        <p className="companyRole">{jobTitle} / {duration}</p>
+        <p>Tools:</p>
         <div className="toolsContainer">
+
           {tools.map((tool) => {
             return (
               <div key={tool.alt}>

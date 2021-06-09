@@ -15,6 +15,8 @@ import rubyLogo from "../assets/logos/ruby.svg";
 import sassLogo from "../assets/logos/sass-1.svg";
 import pythonLogo from "../assets/logos/python-5.svg";
 import salesforceLogo from "../assets/logos/salesforce-2.svg";
+import graphqlLogo from "../assets/logos/graphql.svg";
+import dockerLogo from "../assets/logos/docker.svg";
 import Company from "../components/Company";
 
 export default function CompaniesSection() {
@@ -36,43 +38,6 @@ export default function CompaniesSection() {
           );
         })}
       </div>
-
-      {/* <div className="companiesContainer">
-        {companies.map((company) => {
-          return (
-            <div className="company">
-              <div className="imageContainer">
-                <Link
-                  to={{ pathname: company.linkedIn || null }}
-                  target="_blank"
-                >
-                  {" "}
-                  <img src={company.logo} alt={company.name} />
-                </Link>
-              </div>
-              <div className="companyRole"> {company.position}</div>
-              <div>
-                <p>{company.time}</p>
-              </div>
-              <div className="toolsContainer">
-                {company.tools.map((tool) => {
-                  return (
-                    <div key={tool.alt}>
-                      <img className="logoImage" src={tool.logo} alt={tool.alt} />
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="quoteBlock">
-                {company.quote && <q className="quote">{company.quote}</q>}
-                {company.quote && (
-                  <cite className="quote"> --{company.quoteAuthor}</cite>
-                )}
-              </div>
-            </div>
-          );
-        })}
-      </div> */}
     </div>
   );
 }
@@ -90,23 +55,23 @@ const companies = [
       { logo: rubyLogo, alt: "ruby logo" },
       { logo: pythonLogo, alt: "python logo" },
       { logo: salesforceLogo, alt: "salesforce logo" },
+      { logo: graphqlLogo, alt: "Graph QL Logo"},
+      { logo: dockerLogo, alt: "Docker Logo"}
     ],
     quote: null,
-    description: "bla bla bla ",
     time: "June 2020 - Present",
     linkedIn: "https://www.linkedin.com/company/lithictech/",
   },
   {
     name: "Thesis Agency",
     logo: thesisLogo,
-    position: "Software Engineer Intern",
+    position: "Software Engineer",
     tools: [
       { logo: reactLogo, alt: "react logo" },
       { logo: nodeLogo, alt: "node js logo" },
       { logo: firebaseLogo, alt: "firebase logo" },
       { logo: sketchLogo, alt: "sketch logo" },
     ],
-    description: "bla bla bla ",
     quote:
       "It was a joy working with Ernesto while he was interning at Thesis. He always asked the good questions and would execute on any given project. He also played a huge part in helping with the launch of the new Thesis website. For someone who hadn't had much Front End Development experience, he caught on really quick and the team really wished we could have kept him on longer!",
     quoteAuthor: "Cemal Richards, Senior Software Engineer.",
@@ -122,7 +87,6 @@ const companies = [
       { logo: cssLogo, alt: "css logo" },
       { logo: psLogo, alt: "ps logo" },
     ],
-    description: "bla bla bla ",
     quote:
       "Ernesto is a creative, hard-working, innovative professional. He is responsible and detail oriented. He designed some fantastic pieces for us and kept our social media on track. I enjoyed working with him and having him as a part of our team!",
     time: "September 2015 - June 2020",
