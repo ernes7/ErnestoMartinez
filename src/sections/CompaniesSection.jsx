@@ -1,5 +1,6 @@
 import React from "react";
 import "./CompaniesSection.scss";
+import "../App.scss"
 import lithicLogo from "../assets/companies/lithiclogo3k.png";
 import dmssLogo from "../assets/companies/DMSS-Logo.png";
 import thesisLogo from "../assets/companies/thesis.png";
@@ -22,7 +23,7 @@ import Company from "../components/Company";
 export default function CompaniesSection() {
   return (
     <div className={"companiesSectionContainer"}>
-      <h2>Experience</h2>
+    <h2>Experience</h2>
       <div className="companiesContainer">
         {companies.map((comp) => {
           return (

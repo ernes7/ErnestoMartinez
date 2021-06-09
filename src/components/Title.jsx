@@ -7,6 +7,7 @@ import ParticlesWrapper from "./ParticlesWrapper";
 
 export default function Title() {
   return (
+    <>
     <div className={"titleContainer"}>
       <ParticlesWrapper />
       <h1>Ernesto Martinez</h1>
@@ -43,5 +44,6 @@ export default function Title() {
         </Link>
       </div>
     </div>
+    </>
   );
 }
