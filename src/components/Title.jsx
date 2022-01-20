@@ -3,13 +3,10 @@ import { Link } from "react-router-dom";
 import "./Title.scss";
 
 import Button from "../components/Button";
-import ParticlesWrapper from "./ParticlesWrapper";
 
 export default function Title() {
   return (
-    <>
     <div className={"titleContainer"}>
-      <ParticlesWrapper />
       <h1>Ernesto Martinez</h1>
       <h3>Software Engineer</h3>
       <div>
@@ -44,6 +41,5 @@ export default function Title() {
         </Link>
       </div>
     </div>
-    </>
   );
 }

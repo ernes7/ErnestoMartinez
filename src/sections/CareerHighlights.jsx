@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import { Link } from "react-router-dom";
 import "./CareerHighlights.scss";
 import eliPicture from "../assets/images/ELI-2019-intern-networking.jpg";

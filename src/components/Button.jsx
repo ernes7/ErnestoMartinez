@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Button.scss";
 
-function Button({ title, path, children }) {
+function Button({ title, children }) {
   return (
     <button className={"button"}>
       {title}

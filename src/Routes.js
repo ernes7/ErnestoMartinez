@@ -1,11 +1,9 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
-  Switch,
+  BrowserRouter,
+  Routes,
   Route,
   Link,
-  useRouteMatch,
-  useParams,
 } from "react-router-dom";
 import Home from "./pages/Home";
 import Reviews from "./pages/Reviews";
@@ -14,22 +12,13 @@ import Layout from "./templates/Layout";
 
 export default function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/about">
-          <About />
-        </Route>
-        <Route exact path="/reviews">
-          <Reviews />
-        </Route>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/">
-          <NotFound />
-        </Route>
-      </Switch>
-    </Router>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/about" element={<About/>} />
+          <Route path="/" element={<Home/>} />
+        </Routes>
+      </BrowserRouter>
+
   );
 }
 
@@ -44,9 +33,6 @@ function NotFound() {
       <div>
         <Link to={"/"}>
           <Button>Home</Button>
-        </Link>
-        <Link to={"/reviews"}>
-          <Button>Book Reviews</Button>
         </Link>
       </div>
     </Layout>
