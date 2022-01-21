@@ -16,3 +16,6 @@ run:
 remove-3000:
 	sudo lsof -i tcp:3000
 	sudo kill -9 PID
+
+build:
+	yarn build
