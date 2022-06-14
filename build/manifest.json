@@ -1,0 +1,25 @@
+{
+    "short_name": "Ernesto Martinez",
+    "name": "Ernesto Martinez's Website",
+    "icons": [
+        {
+            "src": "./icons/icon-72x72.png",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "./icons/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./icons/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#66fcf1",
+    "background_color": "#313440"
+}
