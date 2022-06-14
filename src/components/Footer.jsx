@@ -1,11 +1,10 @@
-import React from "react";
-import "./Footer.scss";
+import './Footer.scss'
 
 // TODO: Add year dynamically
 const Footer = () => (
-  <div className="footer">
-    <p>Ernesto Martinez @2021</p>
-  </div>
-);
+    <div className="footer">
+        <p>Ernesto Martinez @2021</p>
+    </div>
+)
 
-export default Footer;
+export default Footer

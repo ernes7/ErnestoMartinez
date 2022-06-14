@@ -7,15 +7,22 @@ upgrade:
 
 remove:
 	sudo rm -rf node_modules/
-	rm yarn-error.log
 	rm yarn.lock
+	rm yarn-error.log
 
 run:
 	yarn start
 
 remove-3000:
-	sudo lsof -i tcp:3000
-	sudo kill -9 PID
+	npx kill-port 3000
 
 build:
-	yarn build
+	yarn run build
+
+prepare:
+	git add .
+	yarn prettier
+	yarn lint
+	yarn lint-staged
+
+

@@ -1,18 +1,17 @@
-import React from "react";
-import PropTypes from "prop-types";
-import "./Button.scss";
+import React from 'react'
+import PropTypes from 'prop-types'
 
 function Button({ title, children }) {
-  return (
-    <button className={"button"}>
-      {title}
-      {children}
-    </button>
-  );
+    return (
+        <button className={'px-4 py-2 rounded'}>
+            {title}
+            {children}
+        </button>
+    )
 }
 
 Button.propTypes = {
-  title: PropTypes.string,
-};
+    title: PropTypes.string,
+}
 
-export default Button;
+export default Button
