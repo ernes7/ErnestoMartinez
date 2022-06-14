@@ -20,15 +20,16 @@
         "web-vitals": "^2.1.4"
     },
     "scripts": {
-        "start": "npm run watch:css && react-scripts start",
-        "build": "npm run watch:css && react-scripts build",
+        "start": "yarn run tailwindcss && react-scripts start",
+        "build": "yarn run tailwindcss && react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
+        "watch:css": "postcss src/tailwind.css",
         "lint": "eslint src --color && eslint --fix",
         "prettier": "prettier src -check && prettier --write .",
         "lint-staged": "lint-staged --config lint-staged.js",
-        "husky-install": "husky install"
+        "husky-install": "husky install",
+        "tailwindcss": "postcss src/tailwind.css"
     },
     "eslintConfig": {
         "extends": [
@@ -54,6 +55,7 @@
         "eslint-plugin-react": "^7.30.0",
         "husky": "^8.0.1",
         "lint-staged": "^13.0.1",
+        "postcss-cli": "^9.1.0",
         "prettier": "2.7.0",
         "tsc-files": "^1.1.3"
     }
