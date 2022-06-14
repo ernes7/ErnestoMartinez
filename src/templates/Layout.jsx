@@ -1,15 +1,10 @@
-import React from "react";
-import "../App.scss";
+import React from 'react'
 
 export default function Layout({ title, children }) {
-  return (
-    <div>
-      <div className="App">
-        <div className="fullLayout">
-          <h1>{title}</h1>
-          {children}
+    return (
+        <div className="bg-primary">
+            <h1>{title}</h1>
+            {children}
         </div>
-      </div>
-    </div>
-  );
+    )
 }
